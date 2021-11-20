@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/daf3c518d4.js" crossorigin="anonymous"></script>
+    <title>Welcome to my website!</title>
+  </head>
+  <body>
+    <nav class="nav-color p-3 fixed-top">
+      <a class="m-4 h3 nav-font text-white">Home</a>
+      <a class="m-4 h3 nav-font text-white">Projects</a>
+      <a class="m-4 h3 nav-font text-white">Contact</a>
+      <a class="m-4 h3 nav-font text-white">Resume</a>
+    </nav>
+    <div class="head pt-5">
+      <div class="display-3 font-light name text-white pt-5 shad">Hello, I am Justin.</div>
+      <div class="h3 font-light name text-white pb-5 m-0 shad">Front-End Developer</div>
+    </div>
+    <div class="bg-white shadow">
+      <div class="container text-center">
+        <div class="row p-4">
+          <div class="col">
+            <i class="fab fa-js display-3"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-node-js display-3"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-react display-3"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-css3-alt display-3"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-html5 display-3"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light">
+      <div class="container">
+        <div class="display-3 text-right font-light">About</div>
+        <p class="h1 text-right font-light pb-4">I am a front-end software developer who for the past 1-2 years has been self-studying software development technologies. I really enjoy coding because it feels like I am bringing life to certain things on my computer. Along with this, solving problems or making things work provides a satisfying sense of achievement. I am currently seeking experience through entry-level coding positions or internships.</p>
+      </div>
+    </div>
+    <div>
+      <div class="container">
+        <div class="row display-3 text-left font-light mt-5"><div>Main Projects</div><i class="mx-5 fas fa-hammer"></i></div>
+        <div class="row mb-5">
+          <button class="col shadow-sm border display-2 p-4 text-center bg-light m-4 shad effect" data-bs-toggle="modal" data-bs-target="#minipost-modal">MiniPost</button>
+          <button class="col shadow-sm border display-2 p-4 text-center text-white bg-primary m-4 shad" data-bs-toggle="modal" data-bs-target="#api-modal">MiniPost API</button>
+          <button class="col shadow-sm border display-2 p-4 text-center text-white dark-color m-4 shad" data-bs-toggle="modal" data-bs-target="#quackery-modal">Quackery</button>
+        </div>
+        <hr>
+      <div class="container">
+        <div class="display-3 text-right font-light mt-5"><i class="mx-5 fas fa-screwdriver"></i> Smaller Projects</div>
+        <div class="row mb-5">
+          <button class="col shadow-sm border display-2 p-4 text-center text-white hc-bg m-4 shad" data-bs-toggle="modal" data-bs-target="#heatcheck-modal">HeatCheck</button>
+          <button class="col shadow-sm border display-2 p-4 text-center text-white m-4 shad bg-info" data-bs-toggle="modal" data-bs-target="#rightshot-modal">Rightshot</button>
+          <button class="col shadow-sm border display-2 p-4 text-center text-white react-bg m-4 shad" data-bs-toggle="modal" data-bs-target="#fb-modal">Firebase & React To-Do</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- minipost -->
+    <div class="modal fade" id="minipost-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="h2 nav-font" id="modal-title">MiniPost</h5>
+            <button type="button" class="btn bg-danger text-white" data-bs-dismiss="modal" aria-label="Close">X</button>
+          </div>
+          <div class="modal-body">
+            <p class="h5 font-light">MiniPost is a full-stack social media application that allows users to share text posts with one another. MiniPost utilizes React and its hooks to handle the client side and to also send asynchronous requests to the API. The application also performs CRUD operations through the text posts created by the users.</p>
+            <a href="https://minpost.herokuapp.com/" class="h5 mx-1 font-light">Website</a> <a href="https://github.com/JustinDomingo/minpost" class="h5 mx-1 font-light">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- API -->
+    <div class="modal fade" id="api-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="h2 nav-font" id="modal-title">MiniPost API</h5>
+            <button type="button" class="btn bg-danger text-white" data-bs-dismiss="modal" aria-label="Close">X</button>
+          </div>
+          <div class="modal-body">
+            <p class="h5 font-light">This is the backend API for the MiniPost application. All documentation will be on the README page of the github repository but the backend basically validates users through Express and Node and pushes them into a MongoDB database. It also grants a JWT with a cookie after a successful register/login. Along with this, the API handles users' posts which are validated and pushed into a MongoDB database.</p>
+            <a href="https://minpost.herokuapp.com/api" class="h5 mx-1 font-light">Website</a> <a href="https://github.com/JustinDomingo/minpost" class="h5 mx-1 font-light">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- quackery -->
+    <div class="modal fade" id="quackery-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="h2 nav-font" id="modal-title">Quackery</h5>
+            <button type="button" class="btn bg-danger text-white" data-bs-dismiss="modal" aria-label="Close">X</button>
+          </div>
+          <div class="modal-body">
+            <p class="h5 font-light">Quackery is a real-time chat app where users can exhange unlimited messages with one another. The application uses sessions to assign each connected user a unique username. From there, it utilizes Socket.io to emit real-time data to connected users.</p>
+            <a href="https://quackerychat.herokuapp.com/" class="h5 mx-1 font-light">Website</a> <a href="https://github.com/JustinDomingo/quackery" class="h5 mx-1 font-light">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HeatCheck -->
+    <div class="modal fade" id="heatcheck-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="h2 nav-font" id="modal-title">Heat Check</h5>
+            <button type="button" class="btn bg-danger text-white" data-bs-dismiss="modal" aria-label="Close">X</button>
+          </div>
+          <div class="modal-body">
+            <p class="h5 font-light">Heat Check is a simple React weather application. It uses fetch to send requests to a public weather API to get the appropriate weather data.</p>
+            <a href="https://heuristic-minsky-8a6100.netlify.app/" class="h5 mx-1 font-light">Website</a> <a href="https://github.com/JustinDomingo/heat-check-react" class="h5 mx-1 font-light">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rightshot -->
+    <div class="modal fade" id="rightshot-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="h2 nav-font" id="modal-title">Rightshot</h5>
+            <button type="button" class="btn bg-danger text-white" data-bs-dismiss="modal" aria-label="Close">X</button>
+          </div>
+          <div class="modal-body">
+            <p class="h5 font-light">Rightshot is a very simple vanilla JavaScript game. For 60 seconds you must click the correct target. The game tracks your accuracy and will deduct points every time you miss. To achieve the highest score you must be as fast but as accurate as possible.</p>
+            <a href="https://rightshot.herokuapp.com/" class="h5 mx-1 font-light">Website</a> <a href="https://github.com/JustinDomingo/heat-check-react" class="h5 mx-1 font-light">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FB & React -->
+    <div class="modal fade" id="fb-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="h2 nav-font" id="modal-title">Firebase & React To-Do App</h5>
+            <button type="button" class="btn bg-danger text-white" data-bs-dismiss="modal" aria-label="Close">X</button>
+          </div>
+          <div class="modal-body">
+            <p class="h5 font-light">This application is a simple to-do app that utilizes fundamental React and Firebase/Firestore methods to perform CRUD operations. Styled with Bootstrap CSS.</p>
+            <a href="https://priceless-wright-2ae2b8.netlify.app/" class="h5 mx-1 font-light">Website</a> <a href="https://github.com/JustinDomingo/fb-react" class="h5 mx-1 font-light">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="head">
+      <div class="container py-5">
+        <div class="display-3 text-left font-light py-5">Contact Me</div>
+        <div class="row my-5">
+          <div class="col text-center text-white p-4 shadow dark-color mx-4 rounded">
+            <a class="a">
+              <i class="far fa-envelope display-3"></i>
+            </a>
+            <div class="font-light">jdomingo122601@gmail.com</div>
+          </div>
+          <div class="col text-center text-white p-4 shadow dark-color mx-4 rounded">
+            <a class="a">
+              <i class="fas fa-phone display-3"></i>
+            </a>
+            <div class="font-light">310-561-4843</div>
+          </div>
+          <div class="col text-center text-white p-4 shadow dark-color mx-4 rounded">
+            <a class="a" href="https://github.com/JustinDomingo">
+              <i class="fab fa-github display-3"></i>
+            </a>
+            <div class="font-light">JustinDomingo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
