@@ -13,13 +13,13 @@
       <a class="m-4 h3 nav-font text-white" href="#home">Home</a>
       <a class="m-4 h3 nav-font text-white" href="#projects">Projects</a>
       <a class="m-4 h3 nav-font text-white" href="#contact">Contact</a>
-      <a class="m-4 h3 nav-font text-white" href="Resume.pdf">Resume</a>
+      <a class="m-4 h3 nav-font text-white" href="Resume- Justin Domingo.pdf">Resume</a>
     </nav>
     <div class="head pt-5" id="home">
       <div class="display-3 font-light name text-white pt-5 shad">Hello, I am Justin.</div>
       <div class="h3 font-light name text-white pb-5 m-0 shad">Front-End Developer</div>
     </div>
-    <div class="bg-white shadow">
+    <div class="bg-white">
       <div class="container text-center">
         <div class="row p-4">
           <div class="col">
@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-light">
+    <div>
       <div class="container">
         <div class="display-3 text-right font-light">About</div>
         <p class="h1 text-right font-light pb-4" id="projects">I am a front-end software developer who for the past 1-2 years has been self-studying software development technologies. I really enjoy coding because it feels like I am bringing life to certain things on my computer. Along with this, solving problems or making things work provides a satisfying sense of achievement. I am currently seeking experience through entry-level coding positions or internships.</p>
@@ -52,6 +52,7 @@
         <div class="row mb-5">
           <button class="col shadow-sm border display-2 p-4 text-center bg-light m-4 shad effect" data-bs-toggle="modal" data-bs-target="#minipost-modal">MiniPost</button>
           <button class="col shadow-sm border display-2 p-4 text-center text-white bg-primary m-4 shad" data-bs-toggle="modal" data-bs-target="#api-modal">MiniPost API</button>
+          <button class="col shadow-sm border display-2 p-4 text-center text-white fabrix-color m-4 shad" data-bs-toggle="modal" data-bs-target="#fabrix-modal">E-commerce</button>
           <button class="col shadow-sm border display-2 p-4 text-center text-white dark-color m-4 shad" data-bs-toggle="modal" data-bs-target="#quackery-modal">Quackery</button>
         </div>
         <hr>
@@ -76,6 +77,22 @@
           <div class="modal-body">
             <p class="h5 font-light">MiniPost is a full-stack social media application that allows users to share text posts with one another. MiniPost utilizes React and its hooks to handle the client side and to also send asynchronous requests to the API. The application also performs CRUD operations through the text posts created by the users.</p>
             <a href="https://minpost.herokuapp.com/" class="h5 mx-1 font-light">Website</a> <a href="https://github.com/JustinDomingo/minpost" class="h5 mx-1 font-light">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fabrix -->
+    <div class="modal fade" id="fabrix-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="h2 nav-font" id="modal-title">Fabrix</h5>
+            <button type="button" class="btn bg-danger text-white" data-bs-dismiss="modal" aria-label="Close">X</button>
+          </div>
+          <div class="modal-body">
+            <p class="h5 font-light">Fabrix is an e-commerce project that I am currently working on. For the frontend, fabrix utilizes React, Bootstrap, and CSS. The backend API was created with Node, Express, MongoDB, and JWTs. User login and registration is authenticated with JSON Web Tokens and cookies. The company stock of items along with registered users are stored in a MongoDB database. The shopping cart feature was built completely from scratch.</p>
+            <a href="https://github.com/JustinDomingo/e-commerce-frontend" class="h5 mx-1 font-light">Front-End Github</a> <a href="https://github.com/JustinDomingo/e-commerce-api" class="h5 mx-1 font-light">API GitHub</a>
           </div>
         </div>
       </div>
@@ -161,7 +178,7 @@
       </div>
     </div>
 
-    <div class="head">
+    <div class="bg-light">
       <div class="container py-5">
         <div id="contact" class="display-3 text-left font-light py-5">Contact Me</div>
         <div class="row my-5">

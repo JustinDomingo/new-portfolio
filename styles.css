@@ -18,6 +18,14 @@
   background-color: #25291c;
 }
 
+.fabrix-color {
+  background-color: #394352;
+}
+
+.fabrix-color:hover {
+  background-color: #475366;
+}
+
 .head {
   background-color: #989c94;
 }
